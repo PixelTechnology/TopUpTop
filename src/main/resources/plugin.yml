@@ -1,0 +1,13 @@
+name: TopUpTop
+version: '${version}'
+versionCode: '${status}'
+main: com.yuankong.topuptop.TopUpTop
+authors: [ yuankong ]
+depend:
+- EasyLib
+- PlayerPoints
+softdepend:
+- HolographicDisplays
+- PlaceholderAPI
+commands:
+  tut:

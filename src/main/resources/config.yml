@@ -1,0 +1,25 @@
+#/tut take <player> <num> -扣除玩家充值记录
+#/tut add <player> <num> -增加玩家充值记录
+#/tut top -查看当前排行榜 /tut top 1-n
+#/tut info <player> -查看玩家信息
+#/tut reload -重载
+#/tut look -玩家查看自己的信息
+
+nullTop: "&a未&b上&c榜,&d敬&e请&6期待"
+look: "%player% 充值点券: %points%"
+date: '2022/01/01-00:00:00'
+showCount: 10    #{topuptop_top_n} -HD变量; %topuptop_top_n% -PAPI变量
+topCount: 50  #top指令显示的数量
+commandUpdate: 90  #top指令的排行信息的刷新时间 /秒
+useUpdateRate: false #是否启用定时刷新，不启用则每充值一次就会刷新
+updateRate: 60  #排行榜刷新速率 /秒
+isReward: false  #是否发放奖励，多服务器选择其中一个开启此项，否则每个服务器会发放一次
+reward:
+  1:
+    leastPoints: 10000  #最少需要达到多少消费才会发放奖励
+    command:
+    - 'give %player% 屌丝得到了神器'
+  2:
+    leastPoints: 10000
+    command:
+    - 'give %player% 屌丝得到了神器'
